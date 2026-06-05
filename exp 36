@@ -1,7 +1,7 @@
 import cv2
 
 # Change this path to your watch image
-img = cv2.imread(r"C:\Users\kasir\Downloads\watch.jpg")
+img = cv2.imread(r"C:\Users\brahmi\Downloads\watch.jpg")
 
 if img is None:
     print("Image not found. Check the file path.")

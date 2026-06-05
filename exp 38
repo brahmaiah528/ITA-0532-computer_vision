@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread(r"C:\Users\kasir\Downloads\face.jpg")
+img = cv2.imread(r"C:\Users\brahmi\Downloads\face.jpg")
 
 if img is None:
     print("Image not found. Check file path.")

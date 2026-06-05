@@ -4,7 +4,7 @@ watch_cascade = cv2.CascadeClassifier(
     cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
 )
 
-path = r"C:\Users\akula\OneDrive\Pictures\Desktop\images.webp"
+path = r"C:\Users\brahmi\OneDrive\Pictures\Desktop\images.webp"
 img = cv2.imread(path)
 
 if img is None:

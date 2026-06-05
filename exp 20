@@ -1,0 +1,26 @@
+import cv2
+import numpy as np
+
+# Load image
+image = cv2.imread(r'C:\Users\shaik\Downloads\butterfly.jpg')
+
+# Convert to grayscale
+gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+# Laplacian mask with negative center coefficient
+kernel = np.array([[0, -1,  0],
+                    [-1, 4, -1],
+                    [0, -1,  0]])
+
+# Apply filter
+laplacian = cv2.filter2D(gray, cv2.CV_64F, kernel)
+
+# Convert to uint8
+sharpened = np.uint8(np.absolute(laplacian))
+
+# Show results
+cv2.imshow("Original", image)
+cv2.imshow("Sharpened Image", sharpened)
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()

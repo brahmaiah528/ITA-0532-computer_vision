@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread(r"C:\Users\kasir\Downloads\download (1).jpg")
+img = cv2.imread(r"C:\Users\brahmi\Downloads\download (1).jpg")
 
 watermarked = img.copy()
 

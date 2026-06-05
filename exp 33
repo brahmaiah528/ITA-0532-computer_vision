@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread(r"C:\Users\kasir\Downloads\butter fly image (2).jpg")
+img = cv2.imread(r"C:\Users\brahmi\Downloads\butter fly image (2).jpg")
 
 if img is None:
     print("Image not loaded")

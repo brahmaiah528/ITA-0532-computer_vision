@@ -1,6 +1,6 @@
 import cv2
 
-video_path = r"C:\Users\kasir\Downloads\video.mp4"
+video_path = r"C:\Users\brahmi\Downloads\video.mp4"
 
 cap = cv2.VideoCapture(video_path)
 
